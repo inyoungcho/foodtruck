@@ -6,10 +6,15 @@ h1.logo {
   }
 }
 
-.drilldown div:first-child {
-  padding-right: 10px;
+.drilldown div {
+  border-right: 1px solid #fff;
+  padding-right: 12px;
+
+  select {
+    width: 293px;
+  }
 }
 .drilldown div:last-child {
-  border-left: 1px solid #fff;
-  margin-left: -10px;
+  padding-right: 14px;
+  border-right: none;
 }
