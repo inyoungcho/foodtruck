@@ -1,0 +1,15 @@
+h1.logo {
+  margin-top: 12px;
+
+  a:active, a:visited, a:hover, a {
+    text-decoration: none;
+  }
+}
+
+.drilldown div:first-child {
+  padding-right: 10px;
+}
+.drilldown div:last-child {
+  border-left: 1px solid #fff;
+  margin-left: -10px;
+}

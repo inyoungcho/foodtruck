@@ -1,0 +1,40 @@
+$colorone: #7DA633;
+$colortwo: #D43626;
+$colorthree: #BF2E2F;
+$colorfour: #E6E8D2;
+$colorfive: #121211;
+
+h1 {
+  font-size: 3em;
+}
+
+div.flash {
+  background-color: $colorone;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 1.25em;
+  font-weight: 500;
+  color: $colorfive;
+}
+
+.drilldown div {
+  background-color: lighten($colorthree, 10%);
+
+  p {
+    font-size: 1.25em;
+  }
+
+  p, select {
+    margin-left: 10px;
+  }
+
+  p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    em {
+      font-weight: 700;
+      font-style: normal;
+    }
+  }
+}
