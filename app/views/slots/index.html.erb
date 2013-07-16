@@ -1,0 +1,7 @@
+<div class="sixteen columns">
+  <ul class="trucks">
+    <% @slots.each do |slot| %>
+      <%= render :partial => 'truck_row', locals: { slot: slot } %>
+    <% end %>
+  </ul>
+</div>

@@ -1,8 +1,4 @@
-$colorone: #7DA633;
-$colortwo: #D43626;
-$colorthree: #BF2E2F;
-$colorfour: #E6E8D2;
-$colorfive: #121211;
+@import 'globals';
 
 h1 {
   font-size: 3em;
@@ -20,7 +16,7 @@ div.flash {
 
 .drilldown div {
   background-color: lighten($colorthree, 10%);
-
+  margin-bottom: 24px;
   p {
     font-size: 1.25em;
   }
