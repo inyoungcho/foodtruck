@@ -7,7 +7,7 @@ class SlotsController < ApplicationController
 
   private
     def load_services
-      @fetch_slots_for_weekday_service ||= Services::FetchSlotsForWeekdayService.new
+      @fetch_slots_for_weekday_service ||= FetchSlotsForWeekdayService.new
     end
 
 end
