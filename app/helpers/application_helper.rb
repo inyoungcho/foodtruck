@@ -1,5 +1,3 @@
-require 'junk_drawer/weekdays'
-
 module ApplicationHelper
 
   def current_weekday
