@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>Foodtruck</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
   <%# Skeleton %>
@@ -18,25 +18,10 @@
     <![endif]-->
 </head>
 <body>
-  <div class="container">
-    <div class="sixteen columns">
-      <h1 class="logo"><%= link_to 'Foodtruck.io', root_path %></h1>
-    </div>
-    
-    <div class="sixteen columns">
-      <% if flash[:notice].present? || flash[:alert].present? %>
-      <div class="flash">
-        <%= flash[:notice] || flash[:alert] %>
-        <%# hack for dumb rails bug; flash should only be shown once %>
-        <% flash[:notice] = nil %>
-        <% flash[:alert] = nil %>
-      </div>
-      <% end %>
-    </div>
 
+  <script type="text/x-handlebars" id="_drilldown">
     <%= render partial: 'common/drilldown' %>
-    <%= yield %>
-  </div>
+  </script>
 
 </body>
 </html>

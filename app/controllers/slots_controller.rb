@@ -3,6 +3,7 @@ class SlotsController < ApplicationController
 
   def index
     @slots = @fetch_slots_for_weekday_service.call
+    respond_with @slots
   end
 
   private

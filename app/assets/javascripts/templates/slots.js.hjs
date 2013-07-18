@@ -1,0 +1,15 @@
+<div class="sixteen columns">
+  <ul class="trucks">
+  {{#each controller}}
+    <li class="row">
+      <div class="alpha six columns info-container">
+        <h3>{{truck.name}}</h3>
+        <p>{{neighborhood}} <em>{{period}}</em></p>
+      </div>
+      <div class="omega ten columns more-link-container">
+        <p>{{#linkTo 'truck' truck}}More information &rarr;{{/linkTo}}</p>
+      </div>
+    </li>
+  {{/each}}
+  </ul>
+</div>

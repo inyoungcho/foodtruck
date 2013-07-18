@@ -1,6 +1,6 @@
 Foodtruck::Application.routes.draw do
 
-  root to: 'slots#index'
+  root to: 'application#index'
   
   resources :slots
   resources :trucks
