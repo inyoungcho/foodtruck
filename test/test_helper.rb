@@ -11,5 +11,8 @@ class ActiveSupport::TestCase
   # -- they do not yet inherit this setting
   fixtures :all
 
-  # Add more helper methods to be used by all tests here...
+  def assert_includes_only expected, collection
+    assert_equal 1, collection.size
+    assert_equal expected, collection.first
+  end
 end

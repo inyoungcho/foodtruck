@@ -8,4 +8,8 @@ class Slot < ActiveRecord::Base
     where(weekday: day)
   end
 
+  def self.in_neighborhood neighborhood
+    where(neighborhood: neighborhood)
+  end
+
 end

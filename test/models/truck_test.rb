@@ -21,4 +21,12 @@ class TruckTest < ActiveSupport::TestCase
     assert !truck_no.available_on?('Monday')
   end
 
+  test "returns trucks of a specific kind" do
+    a = FactoryGirl.create :truck, kind: 'A'
+    b = FactoryGirl.create :truck, kind: 'B'
+
+    assert_includes_only a, Truck.of_kind('A')
+    assert_includes_only b, Truck.of_kind('B')
+  end
+
 end

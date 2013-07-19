@@ -16,4 +16,8 @@ class Truck < ActiveRecord::Base
     slots.find_by_weekday day
   end
 
+  def self.of_kind kind
+    where(kind: kind)
+  end
+
 end
