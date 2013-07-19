@@ -2,7 +2,7 @@
 <div class="drilldown">
   <div class="one-third column omega">
     <p>By <em>neighborhood:</em></p>
-    <%= select_tag :neighborhood, options_for_select(@drilldown_options[:neighborhoods]), include_blank: true %>
+    <%= select_tag :neighborhood, options_for_select(@drilldown_options[:neighborhoods]), prompt: '(Any)' %>
   </div>
   <div class="one-third column alpha omega">
     <p>By <em>weekday:</em></p>
@@ -10,6 +10,6 @@
   </div>
   <div class="one-third column alpha">
     <p>By <em>cuisine:</em></p>
-    <%= select_tag :kind, options_for_select(@drilldown_options[:kinds]), include_blank: true %>
+    <%= select_tag :kind, options_for_select(@drilldown_options[:kinds]), prompt: '(Any)' %>
   </div>
 </div>
