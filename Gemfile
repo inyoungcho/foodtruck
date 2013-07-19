@@ -44,6 +44,7 @@ gem 'handlebars-source'
 group :development, :test do
   gem 'timecop'
   gem 'pry'
+  gem 'pry-rails'
 end
 
 # Use ActiveModel has_secure_password
