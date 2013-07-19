@@ -2,14 +2,14 @@
 <div class="drilldown">
   <div class="one-third column omega">
     <p>By <em>neighborhood:</em></p>
-    <%= select_tag :test %>
+    <%= select_tag :neighborhood, options_for_select(@drilldown_options[:neighborhoods]), include_blank: true %>
   </div>
   <div class="one-third column alpha omega">
     <p>By <em>weekday:</em></p>
-    <%= select_tag :test %>
+    <%= select_tag :weekday, options_for_select(@drilldown_options[:weekdays], current_weekday), include_blank: false %>
   </div>
   <div class="one-third column alpha">
     <p>By <em>cuisine:</em></p>
-    <%= select_tag :test %>
+    <%= select_tag :kind, options_for_select(@drilldown_options[:kinds]), include_blank: true %>
   </div>
 </div>
