@@ -7,8 +7,8 @@ class SlotsController < ApplicationController
   end
 
   private
-    def load_services
-      @fetch_slots_service ||= Services::FetchSlotsService.new
-    end
+  def load_services
+    @fetch_slots_service = Services::FetchSlotsService.new
+  end
 
 end
