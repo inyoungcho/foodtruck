@@ -15,6 +15,7 @@
 //= require handlebars
 //= require ember
 //= require ember-data
+//= require ember-query-params
 //= require_self
 //= require foodtruck
 App = Ember.Application.create();
