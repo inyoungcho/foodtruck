@@ -29,4 +29,14 @@ class TruckTest < ActiveSupport::TestCase
     assert_includes_only b, Truck.of_kind('B')
   end
 
+  test "returns unique available kinds" do
+    2.times { FactoryGirl.create :truck, kind: 'A' }
+    FactoryGirl.create :truck, kind: 'B'
+
+    results = Truck.available_kinds
+    assert_equal 2, results.size
+    assert results.include?('A')
+    assert results.include?('B')
+  end
+
 end

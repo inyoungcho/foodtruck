@@ -20,4 +20,8 @@ class Truck < ActiveRecord::Base
     where(kind: kind)
   end
 
+  def self.available_kinds
+    uniq.pluck :kind
+  end
+
 end
