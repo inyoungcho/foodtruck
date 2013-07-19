@@ -12,4 +12,8 @@ class Slot < ActiveRecord::Base
     where(neighborhood: neighborhood)
   end
 
+  def self.available_neighborhoods
+    uniq.pluck :neighborhood
+  end
+
 end

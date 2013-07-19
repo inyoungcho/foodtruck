@@ -21,4 +21,14 @@ class SlotTest < ActiveSupport::TestCase
     assert_includes_only b, Slot.in_neighborhood('B')
   end
 
+  test "returns unique available neighborhoods" do
+    2.times { FactoryGirl.create :slot, neighborhood: 'A' }
+    FactoryGirl.create :slot, neighborhood: 'B'
+
+    results = Slot.available_neighborhoods
+    assert_equal 2, results.size
+    assert results.include?('A')
+    assert results.include?('B')
+  end
+
 end
