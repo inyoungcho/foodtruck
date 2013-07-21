@@ -1,0 +1,23 @@
+<div class="drilldown">
+  <div class="one-third column omega">
+    <p>By <em>neighborhood:</em></p>
+    {{view Ember.Select prompt="(Any)"
+      selectionBinding="controller.neighborhood"
+      contentBinding="controller.availableNeighborhoods"
+    }}
+  </div>
+  <div class="one-third column alpha omega">
+    <p>By <em>weekday:</em></p>
+    {{view Ember.Select 
+      selectionBinding="controller.weekday"
+      contentBinding="controller.availableWeekdays"
+    }}
+  </div>
+  <div class="one-third column alpha">
+    <p>By <em>cuisine:</em></p>
+    {{view Ember.Select prompt="(Any)"
+      selectionBinding="controller.kind"
+      contentBinding="controller.availableKinds"
+    }}
+  </div>
+</div>

@@ -6,9 +6,14 @@ class SlotsController < ApplicationController
     respond_with @slots
   end
 
+  def available_filters
+    respond_with @drilldown_options_service.call
+  end
+
   private
   def load_services
     @fetch_slots_service = Services::FetchSlotsService.new
+    @drilldown_options_service = Services::DrilldownOptionsService.new
   end
 
 end

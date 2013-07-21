@@ -1,3 +1,4 @@
+{{partial 'drilldown'}}
 <div class="sixteen columns">
   <ul class="trucks">
   {{#each controller}}
