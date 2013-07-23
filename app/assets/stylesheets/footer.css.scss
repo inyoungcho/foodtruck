@@ -1,0 +1,18 @@
+$footerHeight: 200px;
+
+body {
+  height: auto;
+  padding-bottom: $footerHeight;
+}
+
+#footer {
+  position: fixed; 
+  bottom: 0;
+  left: 50%;
+  width: 960px;
+  margin-left: -480px;
+
+  p {
+    text-align: center;
+  }
+}

@@ -4,3 +4,4 @@
   </div>
   {{outlet}}
 </div>
+{{partial 'footer'}}
