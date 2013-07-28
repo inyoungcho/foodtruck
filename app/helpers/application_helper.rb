@@ -4,4 +4,8 @@ module ApplicationHelper
     JunkDrawer::Weekdays.current_weekday
   end
 
+  def configuration
+    $configuration
+  end
+
 end
