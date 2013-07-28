@@ -1,0 +1,18 @@
+<div class="eight columns truck">
+  <h3>{{name}}</h3>
+  <p><em>{{kind}}</em></p>
+  <div class="description">
+    <p>{{description}}</p>
+  </div>
+  <ul class="details">
+    {{#if website}}
+      <li>Website: <a target="_blank" {{bindAttr href="website"}}>{{website}}</a></li>
+    {{/if}}
+    {{#if twitter}}
+      <li>Twitter: <a target="_blank" {{bindAttr href="twitter"}}>{{twitter}}</a></li>
+    {{/if}}
+    {{#if facebook}}
+      <li>Facebook: <a target="_blank" {{bindAttr href="facebook"}}>{{facebook}}</a></li>
+    {{/if}}
+  </ul>
+</div>

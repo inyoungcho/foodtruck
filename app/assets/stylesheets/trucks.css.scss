@@ -18,3 +18,21 @@ ul.trucks {
     }
   }
 }
+
+.truck {
+  p, .details li {
+    font-size: 1.20em;
+  }
+
+  .details, .description {
+    margin-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .details {
+    li {
+      padding: 0;
+    }
+  }
+
+}
