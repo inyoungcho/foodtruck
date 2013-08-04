@@ -15,7 +15,7 @@ div.flash {
 }
 
 .drilldown div {
-  background-color: lighten($colorthree, 10%);
+  background-color: $colorthree;
   margin-bottom: 24px;
   p {
     font-size: 1.25em;

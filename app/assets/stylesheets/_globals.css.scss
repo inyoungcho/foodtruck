@@ -1,5 +1,7 @@
 $colorone: #7DA633;
 $colortwo: #D43626;
-$colorthree: #BF2E2F;
+$colorthree: lighten(#BF2E2F, 10%);
 $colorfour: #E6E8D2;
 $colorfive: #121211;
+
+$borderColor: lighten($colorfive, 50%);

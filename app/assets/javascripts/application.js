@@ -17,6 +17,7 @@
 //= require ember-data
 //= require ember-query-params
 //= require_self
+//= require current-weekday
 //= require foodtruck
 App = Ember.Application.create();
 

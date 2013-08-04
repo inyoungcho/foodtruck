@@ -3,7 +3,7 @@
 ul.trucks {
   li {
     font-size: 1.20em;
-    border-bottom: 1px lighten($colorfive, 50%) solid;
+    border-bottom: 1px $borderColor solid;
 
     div.info-container {
       em {
@@ -20,19 +20,73 @@ ul.trucks {
 }
 
 .truck {
+  .header {
+    border-bottom: 1px $borderColor solid;
+
+    p {
+      margin-bottom: 0.6em;
+    }
+  }
+
   p, .details li {
     font-size: 1.20em;
   }
 
   .details, .description {
     margin-top: 48px;
-    padding-bottom: 48px;
   }
 
   .details {
-    li {
-      padding: 0;
+    a {
+      text-decoration: none;
+      i {
+        font-size: 1.5em;
+        margin-right: 12px;
+      }
     }
   }
 
+}
+
+.truck-map {
+  .map-canvas {
+    width: 100%;
+    height: 460px;
+  }
+
+  ul.locations {
+    margin-top: 24px;
+
+    li {
+      height: 36px;
+      padding-bottom: 0.6em;
+      border-bottom: 1px $borderColor solid;
+      font-size: 1.20em;
+
+      .icon-container {
+        position: absolute;
+        min-width: 25px;
+      }
+
+      .icon {
+        font-size: 34px;
+        display: none;
+      }
+
+      &:hover .icon {
+        display: block;
+        color: $colorthree;
+      }
+
+      .details {
+        margin-left: 25px + 4px;
+        position: absolute;
+
+        .detail-neighborhood {
+          font-weight: 700;
+        }
+
+      }
+    }
+  }
 }

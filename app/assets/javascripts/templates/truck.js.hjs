@@ -1,18 +1,42 @@
 <div class="eight columns truck">
-  <h3>{{name}}</h3>
-  <p><em>{{kind}}</em></p>
+  <div class="header">
+    <h3>{{name}}</h3>
+    <p><em>{{kind}}</em></p>
+  </div>
   <div class="description">
     <p>{{description}}</p>
   </div>
-  <ul class="details">
+  <div class="details">
     {{#if website}}
-      <li>Website: <a target="_blank" {{bindAttr href="website"}}>{{website}}</a></li>
+      <a target="_blank" {{bindAttr href="website"}}><i class="icon-globe"></i></a>
     {{/if}}
     {{#if twitter}}
-      <li>Twitter: <a target="_blank" {{bindAttr href="twitter"}}>{{twitter}}</a></li>
+      <a target="_blank" {{bindAttr href="twitter"}}><i class="icon-twitter"></i></a>
     {{/if}}
     {{#if facebook}}
-      <li>Facebook: <a target="_blank" {{bindAttr href="facebook"}}>{{facebook}}</a></li>
+      <a target="_blank" {{bindAttr href="facebook"}}><i class="icon-facebook"></i></a>
     {{/if}}
+  </div>
+</div>
+<div class="eight columns truck-map">
+  {{view App.TruckMapView}}
+  <ul class="locations tk-museo-sans-condensed">
+    {{#each slots}}
+    <li>
+      <div class="icon-container">
+        <div class="icon">
+          <i class="icon-map-marker"></i>
+        </div>
+      </div>
+      <div class="details">
+        <div class="detail-neighborhood">
+          {{neighborhood}}
+        </div>
+        <div class="detail-time">
+          {{address}} on {{weekday}} at {{period}} 
+        </div>
+      </div>
+    </li>
+    {{/each}}
   </ul>
 </div>
