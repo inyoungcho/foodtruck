@@ -28,22 +28,31 @@ ul.trucks {
     }
   }
 
-  p, .details li {
+  p {
     font-size: 1.20em;
   }
 
-  .details, .description {
-    margin-top: 48px;
+  .description {
+    margin-top: 2.40em;
   }
 
-  .details {
+  .kind {
+    float: left;
+  }
+
+  .links {
+    float: right;
     a {
       text-decoration: none;
       i {
-        font-size: 1.5em;
         margin-right: 12px;
       }
     }
+  }
+
+  .details {
+    height: 1.20em;
+    padding-bottom: 0.6em;
   }
 
 }
@@ -70,7 +79,7 @@ ul.trucks {
 
       .icon {
         font-size: 34px;
-        display: none;
+        // display: none;
       }
 
       &:hover .icon {

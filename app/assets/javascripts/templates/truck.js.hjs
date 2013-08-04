@@ -1,21 +1,23 @@
 <div class="eight columns truck">
   <div class="header">
     <h3>{{name}}</h3>
-    <p><em>{{kind}}</em></p>
+    <div class="details">
+      <p class="kind"><em>{{kind}}</em></p>
+      <div class="links">
+        {{#if website}}
+          <a target="_blank" {{bindAttr href="website"}}><i class="icon-globe"></i></a>
+        {{/if}}
+        {{#if twitter}}
+          <a target="_blank" {{bindAttr href="twitter"}}><i class="icon-twitter"></i></a>
+        {{/if}}
+        {{#if facebook}}
+          <a target="_blank" {{bindAttr href="facebook"}}><i class="icon-facebook"></i></a>
+        {{/if}}
+      </div>
+    </div>
   </div>
   <div class="description">
     <p>{{description}}</p>
-  </div>
-  <div class="details">
-    {{#if website}}
-      <a target="_blank" {{bindAttr href="website"}}><i class="icon-globe"></i></a>
-    {{/if}}
-    {{#if twitter}}
-      <a target="_blank" {{bindAttr href="twitter"}}><i class="icon-twitter"></i></a>
-    {{/if}}
-    {{#if facebook}}
-      <a target="_blank" {{bindAttr href="facebook"}}><i class="icon-facebook"></i></a>
-    {{/if}}
   </div>
 </div>
 <div class="eight columns truck-map">
