@@ -4,5 +4,5 @@ App.TruckController = Ember.ObjectController.extend({
   selectSlot: function(slot) {
     this.set('selectedSlot', slot);
   }
-
+  
 });

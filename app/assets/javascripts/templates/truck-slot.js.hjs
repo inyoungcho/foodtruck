@@ -1,0 +1,15 @@
+<li {{action "selectSlot" this}} {{bindAttr class="view.isSelected:active"}}>
+  <div class="icon-container">
+    <div class="icon">
+      <i class="icon-map-marker"></i>
+    </div>
+  </div>
+  <div class="details">
+    <div class="detail-neighborhood">
+      {{neighborhood}}
+    </div>
+    <div class="detail-time">
+      {{address}} on {{weekday}} at {{period}} 
+    </div>
+  </div>   
+</li>

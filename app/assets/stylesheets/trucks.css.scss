@@ -66,8 +66,9 @@ ul.trucks {
   ul.locations {
     margin-top: 24px;
 
-    li.active .icon {
+    li.active .icon, li.active:hover .icon {
       display: block;
+      color: $iconColor;
     }
 
     li {
