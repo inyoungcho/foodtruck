@@ -3,13 +3,8 @@ module Services
 
     def call options = {}
       # If the weekday is specified, fetch for that weekday
-      # If no weekday is specified and :fetch_all is not set, fetch for today
-      # If no weekday is specified and :fetch_all is set, fetch all slots
-      weekday = options[:weekday]
-      weekday ||= JunkDrawer::Weekdays.current_weekday unless options[:fetch_all]
-
-      # Filter for weekday if one was set
-      query = Slot.available_on(weekday) if weekday.present?
+      # If no weekday is specified, fetch all slots
+      query = Slot.available_on(options[:weekday]) if options[:weekday].present?
       query ||= Slot.all
 
       query.tap do

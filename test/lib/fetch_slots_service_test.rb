@@ -11,13 +11,11 @@ class Services::FetchSlotsServiceTest < ActiveSupport::TestCase
     Timecop.return
   end
 
-  # Ensure that there's no way to fetch more than one day's worth of results, even with a nil parameter
-  test "always fetches just one day even without a param" do
+  test "always fetches just one day with a weekday specified" do
     a = FactoryGirl.create :slot, weekday: 'Monday'
     b = FactoryGirl.create :slot, weekday: 'Tuesday'
 
     assert_includes_only b, @service.call(weekday: 'Tuesday')
-    assert_includes_only a, @service.call
   end
 
   test "allows querying by truck kind" do
