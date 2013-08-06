@@ -1,5 +1,4 @@
 App.SlotsRoute = Ember.Route.extend({
-  observesParameters: ['kind', 'weekday', 'neighborhood'],
 
   setupController: function(controller, model) {
     controller.set('content', model);
@@ -12,17 +11,7 @@ App.SlotsRoute = Ember.Route.extend({
   },
 
   model: function() {
-    return App.Slot.find(this.get('queryParameters'));
-  },
-
-  events: {
-    filtersDidChange: function() {
-      var params = Ember.Router.QueryParameters.create({
-        weekday: this.get('controller').get('weekday'),
-        neighborhood: this.get('controller').get('neighborhood'),
-        kind: this.get('controller').get('kind')
-      });
-      this.transitionTo('slots', params);
-    }  
+    return App.Slot.find();
   }
+
 });

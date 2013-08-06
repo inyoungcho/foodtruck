@@ -7,7 +7,21 @@ App.SlotsController = Ember.ArrayController.extend({
   availableNeighborhoods: null,
   availableKinds: null,
 
-  filtersChanged: function() {
-    this.send('filtersDidChange');
-  }.observes('weekday', 'kind', 'neighborhood')
+  filteredSlots: function() {
+    var slots = this.get('content');
+
+    var refineResults = function(results, name, desired) {
+      if(desired !== null) {
+        return results.filterProperty(name, desired);
+      }
+      return results;
+    };
+
+    slots = refineResults(slots, 'weekday', this.get('weekday'));
+    slots = refineResults(slots, 'kind', this.get('kind'));
+    slots = refineResults(slots, 'neighborhood', this.get('neighborhood'));
+
+    return slots;
+  }.property('content.@each', 'weekday', 'kind', 'neighborhood')
+  
 });
