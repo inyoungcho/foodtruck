@@ -22,9 +22,9 @@
 </div>
 <div class="eight columns truck-map">
   {{view App.TruckMapView}}
-  <ul class="locations tk-museo-sans-condensed">
+  <ul class="locations">
     {{#each slots}}
-    <li>
+    <li {{action "selectSlot" this}}>
       <div class="icon-container">
         <div class="icon">
           <i class="icon-map-marker"></i>

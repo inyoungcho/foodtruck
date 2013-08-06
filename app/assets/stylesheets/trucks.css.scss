@@ -66,6 +66,10 @@ ul.trucks {
   ul.locations {
     margin-top: 24px;
 
+    li.active .icon {
+      display: block;
+    }
+
     li {
       height: 36px;
       padding-bottom: 0.6em;
@@ -79,7 +83,7 @@ ul.trucks {
 
       .icon {
         font-size: 34px;
-        // display: none;
+        display: none;
       }
 
       &:hover .icon {

@@ -2,7 +2,9 @@ var fitBoundsAndKeepZoom = function(map, bounds) {
   map.fitBounds(bounds);
   // this seems so stupid
   google.maps.event.addListenerOnce(map, 'bounds_changed', function(e) {
-    this.setZoom(16);
+    if(this.getZoom() > 16) {
+      this.setZoom(16);      
+    }
   });
 }
 
@@ -59,6 +61,10 @@ App.TruckMapView = Ember.View.extend({
   },
   
   reRenderMap: function() {
-    alert("rerendering");
+    this.initializeMap();
+    // Map just the selected slot now
+    var slot = this.get('controller').get('selectedSlot');
+    mapSlot(slot, this.get('map'), this.get('geocoder'), this.get('bounds'));
   }.observes('selectedSlot')
+
 });
