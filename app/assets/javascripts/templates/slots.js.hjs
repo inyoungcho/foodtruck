@@ -1,7 +1,7 @@
 {{partial 'drilldown'}}
 <div class="sixteen columns">
   <ul class="trucks">
-  {{#each controller}}
+  {{#each filteredSlots}}
     <li class="row">
       <div class="alpha six columns info-container">
         <h3>{{truck.name}}</h3>

@@ -1,6 +1,8 @@
 @import 'globals';
 
 ul.trucks {
+  font-family: "museo-sans-condensed";
+  
   li {
     font-size: 1.20em;
     border-bottom: 1px $borderColor solid;
@@ -20,6 +22,8 @@ ul.trucks {
 }
 
 .truck {
+  font-family: "museo-sans-condensed";
+
   .header {
     border-bottom: 1px $borderColor solid;
 
@@ -58,12 +62,15 @@ ul.trucks {
 }
 
 .truck-map {
+  font-family: "museo-sans-condensed";
+
   .map-canvas {
     width: 100%;
     height: 460px;
   }
 
   ul.locations {
+    font-family: "museo-sans-condensed";
     margin-top: 24px;
 
     li.active .icon, li.active:hover .icon {

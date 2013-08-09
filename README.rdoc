@@ -1,28 +1,7 @@
-== README
+== foodtruck
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The source to seattle-foodtrucks.com. It is an EmberJS/Rails application, where all of the frontend logic is written in an EmberJS application (including templating and filtering), with the Rails API providing an API to retrieve the  information this, and hopefully most other frontends, would need.
 
-Things you may want to cover:
+foodtruck is developed under Ruby 2.0, however no 2.0-specific features are used, so 1.9+ should be okay.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Tests can be run with 'rake test', or, if using Zeus, 'zeus test test' (test framework is Test::Unit).
