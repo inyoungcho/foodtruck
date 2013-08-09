@@ -1,6 +1,6 @@
 <div class="container">
   <div class="sixteen columns">
-    <h1 class="logo"><a href="/">Foodtruck.io</a></h1>
+    <h1 class="logo">{{#linkTo slots}}Foodtruck.io{{/linkTo}}</h1>
   </div>
   {{outlet}}
 </div>
