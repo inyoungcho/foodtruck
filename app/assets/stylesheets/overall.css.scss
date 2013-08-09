@@ -2,6 +2,7 @@
 
 h1 {
   font-size: 3em;
+  font-family: "bello-pro";
 }
 
 div.flash {
@@ -12,9 +13,12 @@ div.flash {
   font-size: 1.25em;
   font-weight: 500;
   color: $colorfive;
+  font-family: "museo-sans-condensed";
 }
 
 .drilldown div {
+  font-family: "museo-sans-condensed";
+
   background-color: $colorthree;
   margin-bottom: 24px;
   p {
@@ -38,4 +42,8 @@ em {
 
 body {
   overflow-y: scroll;
+}
+
+h3 {
+  font-family: "museo-sans-condensed";
 }
