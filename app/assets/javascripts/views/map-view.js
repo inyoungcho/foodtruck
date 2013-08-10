@@ -8,8 +8,17 @@ var fitBoundsAndKeepZoom = function(map, bounds) {
   });
 }
 
+// Google Maps Geocoding HATES landmarks more than anything else,
+// but they're still nice to show in the list presented to the user,
+// so they're just stripped for geocoding
+var removeLandmarks = function(address) {
+  addressParts = address.split(",");
+  return addressParts[0]; // ugh
+}
+
 var mapSlot = function(slot, map, geocoder, bounds) {
-  geocoder.geocode( { 'address': slot.get('address') + ", Seattle, WA" }, function(results, status) {
+  var address = removeLandmarks(slot.get('address')) + ", Seattle, WA, USA";
+  geocoder.geocode( { 'address': address }, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       map.setCenter(results[0].geometry.location);
       var point = results[0].geometry.location;
