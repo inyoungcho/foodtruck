@@ -71,36 +71,45 @@ ul.trucks {
   ul.locations {
     font-family: "museo-sans-condensed";
     margin-top: 24px;
+    display: table;
+    border-collapse: collapse;
 
     li.active .icon, li.active:hover .icon {
-      display: block;
+      display: inline-block;
       color: $iconColor;
     }
 
     li {
-      height: 36px;
+      display: table-row;
+      min-height: 36px;
+      width: 460px;
       padding-bottom: 0.6em;
       border-bottom: 1px $borderColor solid;
       font-size: 1.20em;
 
       .icon-container {
-        position: absolute;
-        min-width: 25px;
+        display: table-cell;
+        width: 25px;
       }
 
       .icon {
         font-size: 34px;
         display: none;
+        margin-top: 0.3em;
+        position: absolute;
       }
 
       &:hover .icon {
-        display: block;
+        display: inline-block;
         color: $colorthree;
       }
 
       .details {
-        margin-left: 25px + 4px;
-        position: absolute;
+        display: table-cell;
+        width: 460px;
+        padding-top: 0.6em;
+        padding-left: 0.6em;
+        padding-bottom: 0.6em;
 
         .detail-neighborhood {
           font-weight: 700;
