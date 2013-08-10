@@ -99,6 +99,10 @@ ul.trucks {
         position: absolute;
       }
 
+      &:hover {
+        cursor: pointer;
+      }
+
       &:hover .icon {
         display: inline-block;
         color: $colorthree;
