@@ -8,7 +8,7 @@
   </div>
   <div class="one-third column alpha omega">
     <p>By <em>weekday:</em></p>
-    {{view Ember.Select 
+    {{view Ember.Select prompt="(Any)" 
       selectionBinding="controller.weekday"
       contentBinding="controller.availableWeekdays"
     }}
