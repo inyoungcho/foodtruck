@@ -6,7 +6,7 @@
   </div>
   <div class="details">
     <div class="detail-neighborhood">
-      {{neighborhood}}
+      {{weekday}} in {{neighborhood}}
     </div>
     <div class="detail-time">
       {{address}} on {{weekday}} at {{period}} 
