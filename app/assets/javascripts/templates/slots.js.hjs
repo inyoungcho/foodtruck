@@ -4,7 +4,7 @@
   {{#each filteredSlots}}
     <li class="row">
       <div class="alpha six columns info-container">
-        <h3>{{truck.name}}</h3>
+        {{#linkTo 'truck' truck}}<h3>{{truck.name}}</h3>{{/linkTo}}
         <p>{{neighborhood}} on <em>{{weekday}} at {{period}}</em></p>
       </div>
       <div class="omega ten columns more-link-container">
