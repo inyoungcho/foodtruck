@@ -18,7 +18,7 @@ App.SlotsController = Ember.ArrayController.extend({
     };
 
     slots = refineResults(slots, 'weekday', this.get('weekday'));
-    slots = refineResults(slots, 'kind', this.get('kind'));
+    slots = refineResults(slots, 'truck.kind', this.get('kind'));
     slots = refineResults(slots, 'neighborhood', this.get('neighborhood'));
 
     return slots;
