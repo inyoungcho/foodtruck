@@ -1,5 +1,6 @@
 class SlotsController < ApplicationController
   before_filter :load_services
+  after_filter :allow_static_caching
 
   def index
     @slots = @fetch_slots_service.call params.reject { |_, v| v.blank? }
