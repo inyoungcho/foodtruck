@@ -23,8 +23,8 @@ namespace :deploy do
   end
 end
 
+before 'deploy:assets:precompile', 'deploy:symlink_shared'
 after 'deploy:update_code', 'deploy:symlink_shared'
-after 'deploy:update_code', 'deploy:configure_appserver'
 
 namespace :custom do
   namespace :rake do

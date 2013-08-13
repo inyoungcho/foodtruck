@@ -62,3 +62,4 @@ gem 'capistrano', group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'puma'
+gem 'mysql2', group: :production
