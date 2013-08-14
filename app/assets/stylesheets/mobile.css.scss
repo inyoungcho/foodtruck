@@ -20,6 +20,15 @@
     display: none;
   }
 
+  .trucks li h3 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: moz-none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
   .trucks li.row .more-link-container {
     display: none;
   }
