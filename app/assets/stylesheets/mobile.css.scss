@@ -1,0 +1,32 @@
+@media all and (min-width: 300px) and (max-width: 767px) {
+  .drilldown div, .drilldown div:last-child {
+    border: none;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 290px !important;
+    margin-bottom: 0.6em !important;
+
+    select, p {
+      width: 290px;
+      margin-left: 0 !important;
+    }
+  }
+
+  .drilldown div:last-child {
+    margin-bottom: 1.2em !important;
+  }
+
+  #footer {
+    display: none;
+  }
+
+  .trucks li.row .more-link-container {
+    display: none;
+  }
+
+  .truck-map {
+    .map-canvas {
+      height: 160px !important;
+    }
+  }
+}
