@@ -7,5 +7,5 @@ end
 bind 'tcp://0.0.0.0:3000'
 threads 16,16
 environment 'production'
-daemonize
+# daemonize
 stdout_redirect 'log/puma.stdout.log', 'log/puma.stderr.log'
