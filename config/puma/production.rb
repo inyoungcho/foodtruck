@@ -9,4 +9,3 @@ threads 16,16
 environment 'production'
 daemonize
 stdout_redirect 'log/puma.stdout.log', 'log/puma.stderr.log'
-state_path '../shared/sockets/puma.state'
