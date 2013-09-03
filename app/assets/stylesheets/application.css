@@ -10,5 +10,6 @@
  *
  *= require_self
  *= require_tree ./skeleton
+ *= require hint
  *= require_tree .
  */

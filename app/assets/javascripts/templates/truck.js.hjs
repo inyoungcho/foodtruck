@@ -4,6 +4,15 @@
     <div class="details">
       <p class="kind"><em>{{kind}}</em></p>
       <div class="links">
+        {{#if acceptsCards}}
+          <span class="hint hint--top" data-hint="Accepts debit/credit">
+            <i class="icon-credit-card"></i>
+          </span>
+        {{else}}
+          <span class="hint hint--top" data-hint="Accepts cash only">
+            <i class="icon-money"></i>
+          </span>
+        {{/if}}
         {{#if website}}
           <a target="_blank" {{bindAttr href="website"}}><i class="icon-globe"></i></a>
         {{/if}}

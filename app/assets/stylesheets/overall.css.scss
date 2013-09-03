@@ -47,3 +47,8 @@ body {
 h3 {
   font-family: "museo-sans-condensed";
 }
+
+.hint:after, [data-hint]:after {
+  font-size: 1.20em;
+  box-shadow: none;
+}
