@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.cookie
 //= require handlebars
 //= require ember
 // TODO - when an ember-states gem is available, use that instead
