@@ -1,4 +1,4 @@
-<li {{action "selectSlot" this}} {{bindAttr class="view.isSelected:active"}}>
+<li {{action "selectSlot" this}} {{bind-attr class="view.isSelected:active"}}>
   <div class="icon-container">
     <div class="icon">
       <i class="icon-map-marker"></i>

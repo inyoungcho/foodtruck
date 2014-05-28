@@ -4,11 +4,11 @@
   {{#each filteredSlots}}
     <li class="row">
       <div class="alpha eight columns info-container">
-        {{#linkTo 'truck' truck}}<h3>{{truck.name}}</h3>{{/linkTo}}
+        {{#link-to 'truck' truck}}<h3>{{truck.name}}</h3>{{/link-to}}
         <p>{{neighborhood}} on <em>{{weekday}} at {{period}}</em></p>
       </div>
       <div class="omega eight columns more-link-container">
-        <p>{{#linkTo 'truck' truck}}More information &rarr;{{/linkTo}}</p>
+        <p>{{#link-to 'truck' truck}}More information &rarr;{{/link-to}}</p>
       </div>
     </li>
   {{/each}}

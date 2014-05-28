@@ -4,5 +4,5 @@ App.Slot = DS.Model.extend({
   neighborhood: DS.attr('string'),
   period: DS.attr('string'),
 
-  truck: DS.belongsTo('App.Truck')
+  truck: DS.belongsTo('truck')
 });

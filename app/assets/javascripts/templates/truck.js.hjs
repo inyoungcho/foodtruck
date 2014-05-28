@@ -14,13 +14,13 @@
           </span>
         {{/if}}
         {{#if website}}
-          <a target="_blank" {{bindAttr href="website"}}><i class="icon-globe"></i></a>
+          <a target="_blank" {{bind-attr href="website"}}><i class="icon-globe"></i></a>
         {{/if}}
         {{#if twitter}}
-          <a target="_blank" {{bindAttr href="twitter"}}><i class="icon-twitter"></i></a>
+          <a target="_blank" {{bind-attr href="twitter"}}><i class="icon-twitter"></i></a>
         {{/if}}
         {{#if facebook}}
-          <a target="_blank" {{bindAttr href="facebook"}}><i class="icon-facebook"></i></a>
+          <a target="_blank" {{bind-attr href="facebook"}}><i class="icon-facebook"></i></a>
         {{/if}}
       </div>
     </div>

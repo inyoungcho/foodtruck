@@ -14,8 +14,6 @@
 //= require jquery_ujs
 //= require handlebars
 //= require ember
-// TODO - when an ember-states gem is available, use that instead
-//= require ember-states
 //= require ember-data
 //= require_self
 //= require current-weekday

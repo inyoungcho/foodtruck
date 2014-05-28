@@ -7,5 +7,5 @@ App.Truck = DS.Model.extend({
   website: DS.attr('string'),
   acceptsCards: DS.attr('boolean'),
 
-  slots: DS.hasMany('App.Slot')
+  slots: DS.hasMany('slot')
 });
