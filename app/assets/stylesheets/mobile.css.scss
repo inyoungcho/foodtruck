@@ -1,3 +1,5 @@
+@import 'globals';
+
 @media all and (min-width: 300px) and (max-width: 767px) {
   .drilldown div, .drilldown div:last-child {
     border: none;
@@ -36,6 +38,17 @@
   .truck-map {
     .map-canvas {
       height: 160px !important;
+    }
+
+    ul.locations li {
+      &:hover .icon {
+        display: none !important;
+      }
+
+      &:active .icon {
+        display: block !important;
+        color: $colorthree;
+      }
     }
   }
 }

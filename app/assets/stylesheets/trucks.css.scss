@@ -80,6 +80,7 @@ ul.trucks {
     }
 
     li {
+      cursor: pointer;
       display: table-row;
       min-height: 36px;
       width: 460px;
@@ -104,10 +105,6 @@ ul.trucks {
       .icon {
         font-size: 34px;
         display: none;
-      }
-
-      &:hover {
-        cursor: pointer;
       }
 
       &:hover .icon {
