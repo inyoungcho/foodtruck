@@ -10,6 +10,8 @@ App.SlotsController = Ember.ArrayController.extend({
   filteredSlots: function() {
     var slots = this.get('content');
 
+    // I benchmarked an implementation that did all the comparisions at once with .filter and it wasn't any faster
+    // (all results were within ~20ms of each other, with no clear preference for one over the other).
     var refineResults = function(results, name, desired) {
       if(desired !== null) {
         return results.filterProperty(name, desired);
