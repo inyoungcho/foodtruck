@@ -13,6 +13,7 @@ scraper = Scrape::Scraper.new
 scraper.import!
 
 # Correct some bad data
+Slot.find_by_neighborhood('Downtown Seasttle').try(:update_attributes, neighborhood: 'Downtown Seattle')
 Slot.find_by_neighborhood('Downtown seattle').try(:update_attributes, neighborhood: 'Downtown Seattle')
 Slot.find_by_neighborhood('SLU').try(:destroy)
 Slot.find_by_neighborhood('Downtown Seasttle').try(:update_attributes, neighborhood: 'Downtown Seattle')
