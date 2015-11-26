@@ -16,6 +16,7 @@ scraper.import!
 Slot.find_by_neighborhood('Downtown Seasttle').try(:update_attributes, neighborhood: 'Downtown Seattle')
 Slot.find_by_neighborhood('Downtown seattle').try(:update_attributes, neighborhood: 'Downtown Seattle')
 Slot.find_by_neighborhood('SLU').try(:destroy)
+Slot.find_by_neighborhood('10a – 2:30p').try(:destroy)
 Slot.find_by_neighborhood('Downtown Seasttle').try(:update_attributes, neighborhood: 'Downtown Seattle')
 Slot.find_by_neighborhood('South lake Union').try(:update_attributes, neighborhood: 'South Lake Union')
 Slot.find_by_neighborhood('Queen ANne').try(:update_attributes, neighborhood: 'Queen Anne')
