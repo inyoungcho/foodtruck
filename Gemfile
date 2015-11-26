@@ -35,11 +35,12 @@ end
 gem 'devise'
 gem 'factory_girl_rails'
 gem 'chronic'
-gem 'active_model_serializers'
+gem 'active_model_serializers', '0.8.1'
 
-gem 'ember-rails'
-gem 'ember-source'
-gem 'handlebars-source'
+gem 'ember-rails', '0.15.0'
+gem 'ember-source', '1.5.1.1'
+gem 'ember-data-source', '1.0.0.beta.7'
+gem 'handlebars-source', '1.3.0'
 
 group :development, :test do
   gem 'timecop'
